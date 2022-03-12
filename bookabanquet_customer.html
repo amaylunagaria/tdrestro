@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Table Reserving</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="fav.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <style type="text/css" media="screen">
+    *::selection {
+      color: #000000;
+    }
+
+    * {
+      font-family: sans-serif;
+    }
+
+    .colorcrim {
+      background-color: #dc134c;
+    }
+
+    .coloramb {
+      background-color: #ffbf00;
+    }
+
+    .divcoll p a {
+      text-decoration: none;
+      padding: 10px;
+      color: black;
+    }
+
+    .navbtn:hover {
+      color: #dc134c;
+      font-weight: bolder;
+      font-size: 25px;
+      transition: .3s;
+      letter-spacing: 20px;
+    }
+
+    .nav-item::after {
+      content: '';
+      display: block;
+      width: 0px;
+      height: 2px;
+      background: #dc134c;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .active>.nav-link,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show,
+    .navbar-nav .show>.nav-link,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:hover {
+      color: #dc134c;
+    }
+
+    .nav-link {
+      padding: 15px 5px;
+      transition: 0.2s;
+    }
+
+    .div2 a,
+    .div3 a {
+      background-color: whitesmoke;
+    }
+
+    .div2 a:hover,
+    .div3 a:hover {
+      transition: 0.3s ease-in;
+      background-color: #ffbf00;
+    }
+
+    .divbqt button:hover {
+      transition: 0.3s ease-in;
+      letter-spacing: 5px;
+      background-color: #dc134c;
+      color: white;
+    }
+
+    .df2 a {
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+    }
+
+    .df2 a:hover {
+      color: #ffbf00;
+      transition: .3s;
+      letter-spacing: 2px;
+    }
+
+    .df21 a {
+      color: whitesmoke;
+    }
+
+    .df21 a:hover:nth-child(odd) {
+      transition: 0.3s ease-out;
+      background-color: #ffbf00;
+      letter-spacing: 10px;
+    }
+
+    .df21 a:hover:nth-child(even) {
+      transition: 0.3s ease-out;
+      background-color: #dc134c;
+      letter-spacing: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="divimg row">
+        <a class="mx-auto" href="index.html">
+          <img class="mx-auto" src="logo.svg" alt="">
+        </a>
+      </div>
+      <div class="container-fluid divcoll">
+        <p style="text-align: center" class="p-3 coloramb">
+          <a class="coloramb navbtn" data-toggle="collapse" href="#collapsenav" role="button" aria-expanded="false" aria-controls="collapsenav">
+            Navigate Site
+          </a>
+        </p>
+        <div class="collapse" id="collapsenav">
+          <div class="card card-body">
+            <nav class="navbar fi-top navbar-expand-md navbar-light coloramb">
+              <!--<a class="navbar-brand text-white" href="index.html">Home</a>-->
+              <div class="collapse navbar-collapse container justify-content-center" id="collapsenav">
+                <div class="divnav">
+                  <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="restrowebsite.html">Home</a></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="tncs.html">Our Policy</a></li> &nbsp
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <br><br><br>
+
+    <div class="divbqt container" id="divtb">
+      <div class="card text-center">
+        <div class="card-header colorcrim">
+          <h3 class="text-light p-2">Banquet Reservation</h3>
+        </div>
+        <div class="card-body form-group coloramb">
+          <h5 class="card-title">Let's have you reserve a hall....</h5><br>
+          <p class="card-text">
+          <form>
+            <div class="form-group row">
+              <label for="inputdate" class="col-sm-2 col-form-label">Select Date: </label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="inputdate">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputtime" class="col-sm-2 col-form-label">Select Time: </label>
+              <div class="col-sm-10">
+                <input type="time" class="form-control" id="inputtime">
+              </div>
+            </div>
+            <button class="btn btn-light" type="submit">Let's Check if a hall is available</button>
+          </form>
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          Powered by NOVA
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+
+    <footer>
+      <div class="divfoot row justify-content-center" style="background-color: #12121b">
+        <!-- #36454f (charcoal) ;  #353935 (onyx) ;  #343434 (jet black) ;  #28282b (matte black)-->
+        <div class="df1 col-sm-4 text-white p-5">
+          <h2><span style="color: #ffbf00;">The Dummy </span> <span style="color: #dc134c">Restaurant</span></h2>
+          <p class="lead">We welcome you to sit back, unwind and appreciate the lovely sights and hints of the ocean while our best gourmet expert sets you up a scrumptious dinner utilizing the best and freshest ingredients.</p>
+
+          <br><br>
+
+          <ion-icon name="call-sharp"></ion-icon> &nbsp 0281 XXX-XXXX <br><br>
+          <ion-icon name="mail-sharp"></ion-icon>&nbsp thedummyrestro@gmail.com
+        </div>
+
+        <div class="df2 col-sm-4 text-white p-5">
+          <h4><span style="color: #ffbf00;">Some </span> <span style="color: #dc134c">Quick </span><span style="color: #ffbf00;">Links </span></h4>
+          <ul>
+            <li style="padding: 10px;"> <a href="restrowebsite.html">Home</a> </li>
+            <li style="padding: 10px;"> <a href="menu.html">Menu</a> </li>
+            <li style="padding: 10px;"> <a href="contactus.html">Contact Us</a> </li>
+            <li style="padding: 10px;"> <a href="aboutus.html">About Us</a> </li>
+            <li style="padding: 10px;"> <a href="tncs.html">Terms and Conditions</a> </li>
+          </ul>
+        </div>
+
+        <div class="df3 col-sm-4 text-white p-5 form-group">
+          <h4><span style="color: #ffbf00;">Contact </span> <span style="color: #dc134c">Us</span></h4>
+          <label for="">Your Email Address :</label><br>
+          <input type="email" class="form-control" name="email" value="" placeholder="Enter email addresss" required></input>
+          <small class="form-text text-muted">Rest assured, your email address is safe with us. :> </small><br>
+          <textarea name="texar" class="form-control" placeholder="Leave your message here. We are all ears!!! ;)"></textarea>
+
+          <br>
+
+          <div class="df21 col-sm btn-group justify-content-center">
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.facebook.com/" target="_blank"> <span> <i class="bi bi-facebook"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.instagram.com" target="_blank"> <span> <i class="bi bi-instagram"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://twitter.com/?lang=en" target="_blank"> <span> <i class="bi bi-twitter"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://web.whatsapp.com/" target="_blank"> <span> <i class="bi bi-whatsapp"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.youtube.com/" target="_blank"> <span> <i class="bi bi-youtube"></i> </span> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dcr row">
+        <p class="mr-auto my-auto col p-1">Copyright &copy;<a href="restrowebsite.html" style="text-decoration:none; color: #dc134c;">The Dummy Restro</a>, All Rights Reserved.</p><br>
+        <blockquote class="blockquote text-right">
+          <p class="mb-0 col">The TDR restaurant</p>
+          <footer class="blockquote-footer">Designed and Developed by <cite title="Source Title">Amay Lunagaria [7124]</cite></footer>
+        </blockquote>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
