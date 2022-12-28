@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Dummy Restro Managment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="fav.ico">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2">
+  <style type="text/css" media="screen">
+
+    html, body{
+      overflow-x: hidden;
+    }
+
+    *::selection {
+      color: #000000;
+    }
+
+    * {
+      font-family: sans-serif;
+    }
+
+    .colorcrim {
+      background-color: #dc134c;
+    }
+
+    .coloramb {
+      background-color: #ffbf00;
+    }
+
+    .divcoll p a {
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+    }
+
+    .navbtn:hover {
+      color: #ffbf00;
+      font-weight: bolder;
+      font-size: 25px;
+      transition: .3s;
+      letter-spacing: 20px;
+    }
+
+    .nav-item::after {
+      content: '';
+      display: block;
+      width: 0px;
+      height: 2px;
+      background: #ffbf00;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .active>.nav-link,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show,
+    .navbar-nav .show>.nav-link,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:hover {
+      color: #ffbf00;
+    }
+
+    .nav-link {
+      padding: 15px 5px;
+      transition: 0.2s;
+    }
+
+    .div2 a,
+    .div3 a {
+      background-color: whitesmoke;
+
+    }
+
+    .div2 a:hover,
+    .div3 a:hover {
+      transition: 0.3s ease-in;
+      background-color: #ffbf00;
+    }
+
+    .divweb:hover {
+      transition: 0.5s ease-in;
+      letter-spacing: 5px;
+    }
+
+    .df2 a {
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+    }
+
+    .df2 a:hover {
+      color: #ffbf00;
+      transition: .3s;
+      letter-spacing: 2px;
+    }
+
+    .df21 a {
+      color: whitesmoke;
+    }
+
+    .df21 a:hover:nth-child(odd) {
+      transition: 0.3s ease-out;
+      background-color: #ffbf00;
+      letter-spacing: 10px;
+    }
+
+    .df21 a:hover:nth-child(even) {
+      transition: 0.3s ease-out;
+      background-color: #dc134c;
+      letter-spacing: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="divimg row">
+        <a class="mx-auto" href="index.html">
+          <img class="mx-auto" src="logo.svg" alt="">
+        </a>
+      </div>
+      <div class="container-fluid divcoll">
+        <p style="text-align: center" class="p-3 colorcrim">
+          <a class="colorcrim navbtn" data-toggle="collapse" href="#collapsenav" role="button" aria-expanded="false" aria-controls="collapsenav">
+            Navigate Site
+          </a>
+        </p>
+        <div class="collapse" id="collapsenav">
+          <div class="card card-body">
+            <nav class="navbar fi-top navbar-expand-md navbar-light colorcrim">
+              <!--<a class="navbar-brand text-white" href="index.html">Home</a>-->
+              <div class="collapse navbar-collapse container justify-content-center" id="collapsenav">
+                <div class="divnav">
+                  <ul class="navbar-nav align-items-center text-white">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">About Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link text-white" href="tncs.html">Our Policy</a></li> &nbsp
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <br><br><br>
+
+    <div class="row">
+      <div class="div2 row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 card-deck mx-5 mt-5">
+        <div class="card text-dark" style="width: auto;">
+          <img src="tableres.jpg" class="card-img-top" alt="reservation">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title d-flex mx-auto">Table Reservation &nbsp &nbsp <ion-icon name="restaurant-sharp">
+              </ion-icon>
+            </h5>
+            <p class="card-text">Tables booked by the customers.</p>
+            <br>
+            <a class="btn mt-auto" id="link2" role="button" href="https://form.jotform.com/212385582823460">OPEN</a>
+          </div>
+        </div>
+
+        <div class="card text-dark" style="width: auto;">
+          <img src="order.jpg" class="card-img-top" alt="orders">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title d-flex mx-auto">Current Orders &nbsp &nbsp <ion-icon name="logo-buffer"></ion-icon>
+            </h5>
+            <p class="card-text">Information about the orders that the customers in the restaurant gave.</p>
+            <br>
+            <a class="btn mt-auto" href="corders.html" role="button">OPEN</a>
+          </div>
+        </div>
+
+        <div class="card text-dark" style="width: auto;">
+          <img src="online_order.jpg" class="card-img-top m-0" alt="online orders">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title d-flex mx-auto">Online Orders (Take aways and Home deliveries) &nbsp &nbsp <ion-icon
+                name="today-sharp"></ion-icon>
+            </h5>
+            <p class="card-text">Information about the orders that the customers ordered online.</p>
+            <br>
+            <a class="btn mt-auto" href="https://www.ubereats.com/" role="button">OPEN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <div class="div3 row card-deck mx-5 mt-5">
+      <div class="card  text-dark" style="width: auto;">
+        <img src="staff.jpg" class="card-img-top" alt="employees">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title d-flex mx-auto">Employees &nbsp &nbsp <ion-icon name="people-sharp"></ion-icon>
+          </h5>
+          <p class="card-text">Contain all the information about the employees working.</p>
+          <br>
+          <a class="btn mt-auto" href="staff.html" role="button">OPEN</a>
+        </div>
+      </div>
+
+      <div class="card  text-dark" style="width: auto;">
+        <img src="payment.jpg" class="card-img-top" alt="billing">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title d-flex mx-auto">Accounting &nbsp &nbsp <ion-icon name="cash-sharp"></ion-icon>
+          </h5>
+          <p class="card-text">Payments to staff and billing the customers.</p>
+          <br>
+          <a class="btn mt-auto" href="accounting.html" role="button">OPEN</a>
+        </div>
+      </div>
+
+      <div class="card  text-dark" style="width: auto;">
+        <img src="menu.jpg" class="card-img-top" alt="menu" style="height: auto; width: auto;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title d-flex mx-auto">Menu &nbsp &nbsp <ion-icon name="fast-food-sharp"></ion-icon>
+          </h5>
+          <p class="card-text">This contian all the details about menu of the restaurant.</p>
+          <br>
+          <a class="btn mt-auto" href="menu.html" role="button">OPEN</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <div class="divweb row-md coloramb text-center m-3 p-4 shadow-lg liveToastBtn">
+      <a href="restrowebsite.html" class="text-decoration-none" style="color: #dc134c;background-color: #ffbf00;">
+        <h2>GO TO RESTAURANT WEBSITE &nbsp &nbsp <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z" />
+          </svg></ion-icon>
+        </h2>
+      </a>
+    </div>
+    <div class="text-center">
+      <small>To come back to this page, click on 'Home' in the navigation bar of restaurant website.</small>
+    </div>
+
+
+    <br><br><br>
+
+
+    <footer>
+      <div class="divfoot row justify-content-center" style="background-color: #12121b">
+        <!-- #36454f (charcoal) ;  #353935 (onyx) ;  #343434 (jet black) ;  #28282b (matte black)-->
+        <div class="df1 col-sm-4 text-white p-5">
+          <h2><span style="color: #ffbf00;">The Dummy </span> <span style="color: #dc134c">Restaurant</span></h2>
+          <p class="lead">We welcome you to sit back, unwind and appreciate the lovely sights and hints of the ocean while our best gourmet expert sets you up a scrumptious dinner utilizing the best and freshest ingredients.</p>
+
+          <br><br>
+
+          <ion-icon name="call-sharp"></ion-icon> &nbsp 0281 XXX-XXXX <br><br>
+          <ion-icon name="mail-sharp"></ion-icon>&nbsp thedummyrestro@gmail.com
+        </div>
+
+        <div class="df2 col-sm-4 text-white p-5">
+          <h4><span style="color: #ffbf00;">Some </span> <span style="color: #dc134c">Quick </span><span style="color: #ffbf00;">Links </span></h4>
+          <ul>
+            <li style="padding: 10px;"> <a href="index.html">Home</a> </li>
+            <li style="padding: 10px;"> <a href="menu.html">Menu</a> </li>
+            <li style="padding: 10px;"> <a href="contactus.html">Contact Us</a> </li>
+            <li style="padding: 10px;"> <a href="aboutus.html">About Us</a> </li>
+            <li style="padding: 10px;"> <a href="tncs.html">Terms and Conditions</a> </li>
+          </ul>
+        </div>
+
+        <div class="df3 col-sm-4 text-white p-5 form-group">
+          <h4><span style="color: #ffbf00;">Contact </span> <span style="color: #dc134c">Us</span></h4>
+          <label for="">Your Email Address :</label><br>
+          <input type="email" class="form-control" name="email" value="" placeholder="Enter email addresss" required></input>
+          <small class="form-text text-muted">Rest assured, your email address is safe with us. :> </small><br>
+          <textarea name="texar" class="form-control" placeholder="Leave your message here. We are all ears!!! ;)"></textarea>
+
+          <br>
+
+          <div class="df21 col-sm btn-group justify-content-center">
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.facebook.com/" target="_blank"> <span> <i class="bi bi-facebook"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.instagram.com" target="_blank"> <span> <i class="bi bi-instagram"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://twitter.com/?lang=en" target="_blank"> <span> <i class="bi bi-twitter"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://web.whatsapp.com/" target="_blank"> <span> <i class="bi bi-whatsapp"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.youtube.com/" target="_blank"> <span> <i class="bi bi-youtube"></i> </span> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dcr row">
+        <p class="mr-auto my-auto col-sm p-1">Copyright &copy;<a href="restrowebsite.html" style="text-decoration:none; color: #dc134c;">The Dummy Restro</a>, All Rights Reserved.</p><br>
+        <blockquote class="blockquote text-right">
+          <p class="mb-0 col-sm">The TDR restaurant</p>
+          <footer class="blockquote-footer">Designed and Developed by <cite title="Source Title">Amay Lunagaria [7124]</cite></footer>
+        </blockquote>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

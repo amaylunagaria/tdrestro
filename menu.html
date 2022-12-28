@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="fav.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <style type="text/css" media="screen">
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    *::selection {
+      color: #000000;
+    }
+
+    * {
+      font-family: monospace;
+    }
+
+    .colorcrim {
+      background-color: #dc134c;
+    }
+
+    .coloramb {
+      background-color: #ffbf00;
+    }
+
+    .divcoll p a {
+      text-decoration: none;
+      padding: 10px;
+      color: black;
+    }
+
+    .navbtn:hover {
+      color: #dc134c;
+      font-weight: bolder;
+      font-size: 25px;
+      transition: .3s;
+      letter-spacing: 20px;
+    }
+
+    .nav-item::after {
+      content: '';
+      display: block;
+      width: 0px;
+      height: 2px;
+      background: #dc134c;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .active>.nav-link,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show,
+    .navbar-nav .show>.nav-link,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:hover {
+      color: #dc134c;
+    }
+
+    .nav-link {
+      padding: 15px 5px;
+      transition: 0.2s;
+    }
+
+    .div11 a,
+    .div12 a {
+      background-color: whitesmoke;
+    }
+
+    .div11 a:hover,
+    .div12 a:hover {
+      transition: 0.3s ease-in;
+      background-color: #000000;
+      color: ghostwhite;
+    }
+
+    .df2 a {
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+    }
+
+    .df2 a:hover {
+      color: #ffbf00;
+      transition: .3s;
+      letter-spacing: 2px;
+    }
+
+    .df21 a {
+      color: whitesmoke;
+    }
+
+    .df21 a:hover:nth-child(odd) {
+      transition: 0.3s ease-out;
+      background-color: #ffbf00;
+      letter-spacing: 10px;
+    }
+
+    .df21 a:hover:nth-child(even) {
+      transition: 0.3s ease-out;
+      background-color: #dc134c;
+      letter-spacing: 10px;
+    }
+
+    .card {
+      width: 300px;
+      display: inline-block;
+      margin: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cardimg :hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="divimg row">
+        <a class="mx-auto" href="index.html">
+          <img class="mx-auto" src="logo.svg" alt="">
+        </a>
+      </div>
+      <div class="container-fluid divcoll">
+        <p style="text-align: center" class="p-3 coloramb">
+          <a class="coloramb navbtn" data-toggle="collapse" href="#collapsenav" role="button" aria-expanded="false"
+            aria-controls="collapsenav">
+            Navigate Site
+          </a>
+        </p>
+        <div class="collapse" id="collapsenav">
+          <div class="card card-body">
+            <nav class="navbar fi-top navbar-expand-md navbar-light coloramb">
+              <!--<a class="navbar-brand text-dark" href="index.html">Home</a>-->
+              <div class="collapse navbar-collapse container justify-content-center" id="collapsenav">
+                <div class="divnav">
+                  <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="restrowebsite.html">Home</a></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" style="color: #dc134c;"
+                        href="contactus.html">Contact Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li> &nbsp
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    <li class="nav-item"><a class="nav-link" href="tncs.html">Our Policy</a></li> &nbsp
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <br><br>
+
+
+    <div class="div11 row card-deck m-4">
+      <div class="card mb-3 col-sm-4">
+        <img class="card-img-top" src="indian_cuisine_2.jpg" alt="indian_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">Indian Cuisine</h5>
+          <p class="card-text text-dark">Indian cuisine consists of a variety of regional and traditional cuisines
+            native to the Indian subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and
+            occupations, these cuisines vary
+            substantially and use locally available spices, herbs, vegetables, and fruits.</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#indian_cuisine">OPEN</a>
+
+          <div class="modal fade" id="indian_cuisine" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="indian_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">Indian Cuisine</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="indian_cuisine1.jpg" alt="indian_cuisine1"><br><br><br>
+                  <img src="indian_cuisine2.jpg" alt="indian_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3    col-sm-4">
+        <img class="card-img-top" src="chinese_cuisine.jpg" alt="chinese_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">Chinese Cuisine</h5>
+          <p class="card-text text-dark">Chinese cuisine has influenced many other cuisines in Asia, with modifications
+            made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and
+            tofu, and utensils
+            such as chopsticks and the wok, can now be found worldwide.</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#chinese_cuisine">OPEN</a>
+
+          <div class="modal fade" id="chinese_cuisine" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="chinese_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">Chinese Cuisine.</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="chinese_cuisine1.jpg" alt="chinese_cuisine1"><br><br><br>
+                  <img src="chinese_cuisine2.jpg" alt="chinese_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3    col-sm-4">
+        <img class="card-img-top" src="italian_cuisine.jpg" alt="italian_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">Italian Cuisine</h5>
+          <p class="card-text text-dark">Italian cuisine is a Mediterranean cuisine consisting of the ingredients,
+            recipes and cooking techniques developed across the Italian Peninsula since antiquity, and later spread
+            around the world together with
+            waves of Italian diaspora.</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#italian_cuisine">OPEN</a>
+
+          <div class="modal fade" id="italian_cuisine" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="italian_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">Italian Cuisine</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="italian_cuisine1.jpg" alt="italian_cuisine1"><br><br><br>
+                  <img src="italian_cuisine2.jpg" alt="italian_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="div12 card-deck m-4">
+      <div class="card mb-3    col-sm-4">
+        <img class="card-img-top" src="mexican_cuisine.jpg" alt="mexican_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">Mexican Cuisine</h5>
+          <p class="card-text text-dark">Mexican cuisine consists of the cooking cuisines and traditions of the modern
+            country of Mexico. Its roots lie in Mesoamerican cuisine. Its ingredients and methods begin with the first
+            agricultural
+            communities such as the Maya who domesticated maize, created the standard process of maize nixtamalization,
+            and established their foodways (Maya cuisine).</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#mexican_cuisine">OPEN</a>
+
+          <div class="modal fade" id="mexican_cuisine" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="mexican_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">Mexican Cuisine</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="mexican_cuisine1.jpg" alt="mexican_cuisine1"><br><br><br>
+                  <img src="mexican_cuisine2.jpg" alt="mexican_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card mb-3    col-sm-4">
+        <img class="card-img-top" src="japanese_cuisine_2.jpg" alt="japanese_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">Japanese Cuisine</h5>
+          <p class="card-text text-dark">Japanese cuisine encompasses the regional and traditional foods of Japan, which
+            have developed through centuries of political, economic, and social changes. The traditional cuisine of
+            Japan (Japanese:
+            washoku) is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients.
+            Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth.</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#japanese_cuisine">OPEN</a>
+
+          <div class="modal fade" id="japanese_cuisine" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="japanese_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">Japanese Cuisine</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="japanese_cuisine1.jpg" alt="japanese_cuisine1"><br><br><br>
+                  <img src="japanese_cuisine2.jpg" alt="japanese_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3    col-sm-4">
+        <img class="card-img-top" src="french_cuisine.jpg" alt="french_cuisine">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">French Cuisine</h5>
+          <p class="card-text text-dark">French cuisine developed throughout the centuries influenced by the many
+            surrounding cultures of Spain, Italy, Switzerland, Germany and Belgium, in addition to its own food
+            traditions on the long western
+            coastlines of the Atlantic, the Channel and of course, inland.</p>
+          <br>
+          <a class="btn mt-auto" href="#" role="button" data-toggle="modal" data-target="#french_cuisine">OPEN</a>
+
+          <div class="modal fade" id="french_cuisine" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-md">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="french_cuisine"
+                    style="background-color:black; color:ghostwhite; padding:10px;">French Cuisine</h5> 
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <img src="french_cuisine1.jpg" alt="french_cuisine1"><br><br><br>
+                  <img src="french_cuisine2.jpg" alt="french_cuisine2">
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <button type="button mt-auto" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer>
+      <div class="divfoot row justify-content-center" style="background-color: #12121b">
+        <!-- #36454f (charcoal) ;  #353935 (onyx) ;  #343434 (jet black) ;  #28282b (matte black)-->
+        <div class="df1 col-sm-4 text-white p-5">
+          <h2><span style="color: #ffbf00;">The Dummy </span> <span style="color: #dc134c">Restaurant</span></h2>
+          <p class="lead">We welcome you to sit back, unwind and appreciate the lovely sights and hints of the ocean
+            while our best gourmet expert sets you up a scrumptious dinner utilizing the best and freshest ingredients.
+          </p>
+
+          <br><br>
+
+          <ion-icon name="call-sharp"></ion-icon> &nbsp 0281 XXX-XXXX <br><br>
+          <ion-icon name="mail-sharp"></ion-icon>&nbsp thedummyrestro@gmail.com
+        </div>
+
+        <div class="df2 col-sm-4 text-white p-5">
+          <h4><span style="color: #ffbf00;">Some </span> <span style="color: #dc134c">Quick </span><span
+              style="color: #ffbf00;">Links </span></h4>
+          <ul>
+            <li style="padding: 10px;"> <a href="restrowebsite.html">Home</a> </li>
+            <li style="padding: 10px;"> <a href="menu.html">Menu</a> </li>
+            <li style="padding: 10px;"> <a href="contactus.html">Contact Us</a> </li>
+            <li style="padding: 10px;"> <a href="aboutus.html">About Us</a> </li>
+            <li style="padding: 10px;"> <a href="tncs.html">Terms and Conditions</a> </li>
+          </ul>
+        </div>
+
+        <div class="df3 col-sm-4 text-white p-5 form-group">
+          <h4><span style="color: #ffbf00;">Contact </span> <span style="color: #dc134c">Us</span></h4>
+          <label for="">Your Email Address :</label><br>
+          <input type="email" class="form-control" name="email" value="" placeholder="Enter email addresss"
+            required></input>
+          <small class="form-text text-muted">Rest assured, your email address is safe with us. :> </small><br>
+          <textarea name="texar" class="form-control"
+            placeholder="Leave your message here. We are all ears!!! ;)"></textarea>
+
+          <br>
+
+          <div class="df21 col-sm btn-group justify-content-center">
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.facebook.com/" target="_blank">
+              <span> <i class="bi bi-facebook"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.instagram.com" target="_blank">
+              <span> <i class="bi bi-instagram"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://twitter.com/?lang=en"
+              target="_blank"> <span> <i class="bi bi-twitter"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://web.whatsapp.com/" target="_blank">
+              <span> <i class="bi bi-whatsapp"></i> </span> </a>
+            <a type="button" class="btn btn-outline m-2" name="button" href="https://www.youtube.com/" target="_blank">
+              <span> <i class="bi bi-youtube"></i> </span> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dcr row">
+        <p class="mr-auto my-auto col-sm p-1">Copyright &copy;<a href="restrowebsite.html"
+            style="text-decoration:none; color: #dc134c;">The Dummy Restro</a>, All Rights Reserved.</p><br>
+        <blockquote class="blockquote text-right">
+          <p class="mb-0 col-sm">The TDR restaurant</p>
+          <footer class="blockquote-footer">Designed and Developed by <cite title="Source Title">Amay Lunagaria
+              [7124]</cite></footer>
+        </blockquote>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
